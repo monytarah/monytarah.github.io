@@ -1,1 +1,51 @@
-final-project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Guess the Note!</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body class="text-center body margin">
+    <h1 >Guess the Notes!</h1>
+    <h2>Test yourself and see if you have perfect pitch</h2>
+    <h6>You have to click on the question first before answering</h6>
+    <div class="text-center">
+        <input class="text-black" type="button" value="Play the 1st note" onclick="playA()">
+        <audio id="audio1" src="piano-a.wav"></audio>
+        <input class="text-black" type="button" value="Play the 2nd note" onclick="playE()">
+        <audio id="audio2" src="piano-e.wav"></audio>
+        <input class="text-black" type="button" value="Play the 3rd note" onclick="playG()">
+        <audio id="audio3" src="piano-g.wav"></audio>
+        <input class="text-black" type="button" value="Play the 4th note" onclick="playF()">
+        <audio id="audio4" src="piano-f.wav"></audio>
+        <input class="text-black" type="button" value="Play the 5th note" onclick="playC()">
+        <audio id="audio5" src="piano-c.wav"></audio>
+        
+        <h4>Which note did you hear?</h4>
+    </div>
+    <div class="answer">
+        <button id="c" onclick="klikJawaban('c')" class="text-black">C</button>
+        <button id="d" onclick="klikJawaban('d')" class="text-black">D</button>
+        <button id="e" onclick="klikJawaban('e')" class="text-black">E</button>
+        <button id="f" onclick="klikJawaban('f')" class="text-black">F</button>
+        <button id="g" onclick="klikJawaban('g')" class="text-black">G</button>
+        <button id="a" onclick="klikJawaban('a')" class="text-black">A</button>
+        <button id="b" onclick="klikJawaban('b')" class="text-black">B</button>
+    </div>
+</body>
+<div >
+    <h4 id="result">RESULT</h4>
+    <br> <br>
+    <br> <br>
+    <p>Note: Perfect pitch is a rare ability of a person to identify or re-create a given musical note without the benefit of a reference tone.</p>
+</div>
+<footer >
+    Sponsored by: Monyta X Steinway & Sons @2020
+</footer>
+<script src="main.js"></script>
+</html>
+
